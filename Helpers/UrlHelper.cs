@@ -17,6 +17,8 @@ namespace PWTestProject.Core
         public static string BaseUrl => _config["BaseUrl"];
 
         public static string TextBoxUrl => $"{BaseUrl}/text-box";
+
+        public static string CheckBoxUrl => $"{BaseUrl}/checkbox";
     }
 }
 
