@@ -29,6 +29,8 @@ namespace PWTestProject.Pages
         // Actions
         public async Task FillFormAsync(TextBoxModel model)
         {
+
+           // await _page.WaitForSelectorAsync("#userName", new PageWaitForSelectorOptions { Timeout = 60000 });
             await FullNameInput.FillAsync(model.FullName);
             await EmailInput.FillAsync(model.Email);
             await CurrentAddressInput.FillAsync(model.CurrentAddress);
